@@ -8,6 +8,7 @@ import (
 	"time"
 
 	"github.com/dcoxall/aoc2021/dayone"
+	"github.com/dcoxall/aoc2021/daythree"
 	"github.com/dcoxall/aoc2021/daytwo"
 )
 
@@ -57,9 +58,13 @@ func day02() {
 	withInput("input/02.txt", daytwo.PartOne, daytwo.PartTwo)
 }
 
+func day03() {
+	withInput("input/03.txt", daythree.PartOne, daythree.PartTwo)
+}
+
 var (
 	targetDay   uint
-	solutionMap = map[uint]func(){1: day01, 2: day02}
+	solutionMap = map[uint]func(){1: day01, 2: day02, 3: day03}
 )
 
 func init() {
